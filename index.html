@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-window">
+        <div class="weather-info">
+            <div class="input-container">
+                <img src="images/icons8-местоположение-64.png" alt="geo icon" class="fimg">
+                <form>
+                    <input type="text" placeholder="Введите город" class="inputType">
+                </form>
+                <img src="images/icons8-поиск-50.png" alt="search icon" class="timg">
+            </div>
+            <div class="input-weather-info">
+                <p class="weather-info-c"></p>
+                <img src="images/clouds.png" alt="clouds" class="weather-info-img">
+                <p class="weather-info-text"></p>
+            </div>
+            <div class="weather-info-details">
+                <div class="weather-info-details-span">
+                    <img src="images/humidity.png" alt="humidity" width="50px" height="50px">
+                    <div class="weather-info-details-text">
+                        <p class="weather-info-details-hum"></p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="weather-info-details-span">
+                    <img src="images/wind_wc4yk763ig7h.svg" alt="wind" width="50px" height="50px">
+                    <div class="weather-info-details-text">
+                        <p class="weather-info-details-wind"></p>
+                        <p>Wind speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

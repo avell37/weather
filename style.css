@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/4k-ocean-ia6qs8dhowpjrzgj.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.weather-window {
+    position: relative;
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border: 0.1px solid rgb(255, 255, 255, 0.4);
+}
+
+.weather-window::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    z-index: -1; 
+}
+
+.weather-info {
+    display: grid;
+
+}
+
+.fimg,
+.timg {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.fimg {
+    left: 5px;
+}
+
+.timg {
+    right: 7px;
+}
+
+.inputType {
+    display: flex;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255, 0.4);
+    padding: 0 0 0 30px;
+    background: transparent;
+    color: white;
+    font-weight: 900;
+    font-size: 17px;
+}
+
+.inputType:focus {
+    outline: none;
+}
+
+.inputType::placeholder {
+    font-weight: 900;
+    color: white;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 0px;
+}
+
+.input-weather-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0 50px;
+}
+
+.weather-info-details {
+    display: flex;
+    justify-content: space-around;
+}
+
+.weather-info-c {
+    font-weight: 900;
+    color: white;
+    font-size: 26px;
+    margin: 0 0 20px;
+}
+
+.weather-info-text {
+    margin: 10px 0 0 0;
+    font-weight: 900;
+    color: white;
+    font-size: 24px;
+}
+
+.weather-info-img {
+    width: 150px; 
+    height: 150px;
+}
+
+.weather-info-details-span {
+    display: flex;
+}
+
+.weather-info-details-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.weather-info-details-text p {
+    margin: 0;
+    font-weight: 400;
+    color: white;
+}
+
+.weather-info-details-text:first-child {
+    margin-bottom: 10px;
+}
